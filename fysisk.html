@@ -2,17 +2,23 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="sv" xml:lang="sv"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.8.25">
+<meta name="generator" content="quarto-1.10.18">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Fysisk hälsa</title>
 <style>
-code{white-space: pre-wrap;}
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
 div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
 ul.task-list{list-style: none;}
 ul.task-list li input[type="checkbox"] {
@@ -24,7 +30,6 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
-  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -52,15 +57,14 @@ div.csl-indent {
 <meta name="quarto:offset" content="./">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-029b10fc0dc652dab2ec1ac156c1a037.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-221fb94c3ec07aa7e68c2d5abc4fc18e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -89,7 +93,7 @@ div.csl-indent {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@4/tex-chtml.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -144,8 +148,8 @@ window.Quarto = {
 <span class="menu-text">Start</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./om.html"> 
-<span class="menu-text">Om</span></a>
+    <a class="nav-link" href="./livslangd.html"> 
+<span class="menu-text">Livslängd</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./psykisk.html"> 
@@ -156,7 +160,7 @@ window.Quarto = {
 <span class="menu-text">Fysisk hälsa</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./konsum.html"> 
+    <a class="nav-link" href="./levnadsvanor.html"> 
 <span class="menu-text">Levnadsvanor</span></a>
   </li>  
 </ul>
@@ -175,43 +179,29 @@ window.Quarto = {
     <h2 id="toc-title">Innehåll</h2>
    
   <ul>
-  <li><a href="#inledning" id="toc-inledning" class="nav-link active" data-scroll-target="#inledning">Inledning</a></li>
-  <li><a href="#fysisk-hälsa" id="toc-fysisk-hälsa" class="nav-link" data-scroll-target="#fysisk-hälsa">Fysisk hälsa</a>
+  <li><a href="#inledning" id="toc-inledning" class="nav-link active" data-scroll-target="#inledning">Inledning</a>
   <ul class="collapse">
-  <li><a href="#hälsobesvär" id="toc-hälsobesvär" class="nav-link" data-scroll-target="#hälsobesvär">Hälsobesvär</a></li>
-  <li><a href="#fysisk-aktivitet" id="toc-fysisk-aktivitet" class="nav-link" data-scroll-target="#fysisk-aktivitet">Fysisk aktivitet</a>
-  <ul class="collapse">
-  <li><a href="#kommunnivå" id="toc-kommunnivå" class="nav-link" data-scroll-target="#kommunnivå">Kommunnivå</a></li>
-  <li><a href="#skolelever" id="toc-skolelever" class="nav-link" data-scroll-target="#skolelever">Skolelever</a></li>
+  <li><a href="#om-statistiken" id="toc-om-statistiken" class="nav-link" data-scroll-target="#om-statistiken">Om statistiken</a></li>
+  <li><a href="#om-enkätdata" id="toc-om-enkätdata" class="nav-link" data-scroll-target="#om-enkätdata">Om enkätdata</a></li>
   </ul></li>
-  <li><a href="#stillasittande" id="toc-stillasittande" class="nav-link" data-scroll-target="#stillasittande">Stillasittande</a></li>
-  </ul></li>
-  <li><a href="#tandhälsa" id="toc-tandhälsa" class="nav-link" data-scroll-target="#tandhälsa">Tandhälsa</a>
-  <ul class="collapse">
-  <li><a href="#kommunnivå-1" id="toc-kommunnivå-1" class="nav-link" data-scroll-target="#kommunnivå-1">Kommunnivå</a></li>
-  <li><a href="#avstått-trots-behov" id="toc-avstått-trots-behov" class="nav-link" data-scroll-target="#avstått-trots-behov">Avstått trots behov</a></li>
-  </ul></li>
-  <li><a href="#diabetes" id="toc-diabetes" class="nav-link" data-scroll-target="#diabetes">Diabetes</a>
-  <ul class="collapse">
-  <li><a href="#kommunnivå-2" id="toc-kommunnivå-2" class="nav-link" data-scroll-target="#kommunnivå-2">Kommunnivå</a></li>
-  </ul></li>
+  <li><a href="#diabetes" id="toc-diabetes" class="nav-link" data-scroll-target="#diabetes">Diabetes</a></li>
   <li><a href="#högt-blodtryck" id="toc-högt-blodtryck" class="nav-link" data-scroll-target="#högt-blodtryck">Högt blodtryck</a>
   <ul class="collapse">
-  <li><a href="#kommunnivå-3" id="toc-kommunnivå-3" class="nav-link" data-scroll-target="#kommunnivå-3">Kommunnivå</a></li>
+  <li><a href="#kommunnivå" id="toc-kommunnivå" class="nav-link" data-scroll-target="#kommunnivå">Kommunnivå</a></li>
   </ul></li>
   <li><a href="#allergi" id="toc-allergi" class="nav-link" data-scroll-target="#allergi">Allergi</a></li>
   <li><a href="#astma" id="toc-astma" class="nav-link" data-scroll-target="#astma">Astma</a>
   <ul class="collapse">
-  <li><a href="#kommunnivå-4" id="toc-kommunnivå-4" class="nav-link" data-scroll-target="#kommunnivå-4">Kommunnivå</a></li>
-  </ul></li>
-  <li><a href="#huvudvärk-tinnitus-och-yrsel" id="toc-huvudvärk-tinnitus-och-yrsel" class="nav-link" data-scroll-target="#huvudvärk-tinnitus-och-yrsel">Huvudvärk, tinnitus och yrsel</a>
-  <ul class="collapse">
-  <li><a href="#kommunnivå-5" id="toc-kommunnivå-5" class="nav-link" data-scroll-target="#kommunnivå-5">Kommunnivå</a></li>
-  <li><a href="#skolelever-1" id="toc-skolelever-1" class="nav-link" data-scroll-target="#skolelever-1">Skolelever</a></li>
+  <li><a href="#kommunnivå-1" id="toc-kommunnivå-1" class="nav-link" data-scroll-target="#kommunnivå-1">Kommunnivå</a></li>
   </ul></li>
   <li><a href="#övervikt-och-obesitas" id="toc-övervikt-och-obesitas" class="nav-link" data-scroll-target="#övervikt-och-obesitas">Övervikt och obesitas</a>
   <ul class="collapse">
-  <li><a href="#kommunnivå-6" id="toc-kommunnivå-6" class="nav-link" data-scroll-target="#kommunnivå-6">Kommunnivå</a></li>
+  <li><a href="#kommunnivå-2" id="toc-kommunnivå-2" class="nav-link" data-scroll-target="#kommunnivå-2">Kommunnivå</a></li>
+  </ul></li>
+  <li><a href="#tandhälsa" id="toc-tandhälsa" class="nav-link" data-scroll-target="#tandhälsa">Tandhälsa</a>
+  <ul class="collapse">
+  <li><a href="#kommunnivå-3" id="toc-kommunnivå-3" class="nav-link" data-scroll-target="#kommunnivå-3">Kommunnivå</a></li>
+  <li><a href="#avstått-trots-behov" id="toc-avstått-trots-behov" class="nav-link" data-scroll-target="#avstått-trots-behov">Avstått trots behov</a></li>
   </ul></li>
   <li><a href="#bibliography" id="toc-bibliography" class="nav-link" data-scroll-target="#bibliography">Källor</a></li>
   </ul>
@@ -241,18 +231,13 @@ window.Quarto = {
 
 <section id="inledning" class="level1">
 <h1>Inledning</h1>
-<p>Denna rapport redovisar folkhälsan i Uppsala län med fokus på fysisk hälsa, med avsnitt om tandhälsa, diabetes samt allergi och astma. Rapporten ingår i en serie där länets folkhälsoutveckling följs över tid.</p>
-<p>Rapporten bygger på en stor del enkätdata. Enkätdata är användbar, men den är alltid förenad med osäkerhet. Alla som får en enkät svarar inte, vilket leder till bortfall. Om vissa grupper är mindre benägna att svara kan resultaten bli snedvridna. Det finns också internt bortfall, när personer hoppar över enskilda frågor.</p>
-<p>Eftersom enkäter bygger på självrapportering kan svaren dessutom påverkas av missförstånd, minnesfel eller att man vill ge ett socialt önskvärt svar.</p>
-<p>Resultaten behöver därför inte fullt ut spegla hela befolkningen. Osäkerheten blir särskilt stor när man bryter ner materialet på mindre grupper, till exempel efter kön, födelseland eller kommun. I sådana fall är antalet svar ofta färre, vilket gör resultaten mer osäkra och känsliga för enskilda observationer.</p>
-</section>
-<section id="fysisk-hälsa" class="level1">
-<h1>Fysisk hälsa</h1>
-<p>I Uppsala län följs den fysiska hälsan bland annat genom den nationella folkhälsoenkäten, där invånarna bland annat tillfrågas om sin tandhälsa, fysiska aktivitet och besvär av sjukdomar.</p>
-<p>Nationella folkhälsoenkäten genomförs av <span class="citation" data-cites="folkhalsomyndigheten_nfhe">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten_nfhe" role="doc-biblioref">u.å.</a>)</span> och är en undersökning om svenska befolkningens hälsa, med syfte att se hur befolkningen mår över tid. Det är en urvalsundersökning för befolkningen 16 år och äldre från och med 2021. Tidigare omfattade urvalet åldrarna 16–84 år.</p>
-<p>Data som hämtas med ett givet konfidensintervall följer det en standard på 95 %. Vilket då betyder att det sanna värdet ligger inom intervallet med 95 % säkerhet. När intervall mellan 2 grupper överlappar betyder det att det inte går att bevisa en statistisk signifikant skillnad mellan grupperna, till en säkerhet med 95%. Det innebär dock inte att det med säkerhet saknas en skillnad. Det kan finnas en reell skillnad, men osäkerheten i materialet är för stor för att den ska kunna styrkas statistiskt.</p>
-<p>För data från <span class="citation" data-cites="region_uppsala_liv_halsa_vuxen">Liv och hälsa vuxen-Region Uppsala (<a href="#ref-region_uppsala_liv_halsa_vuxen" role="doc-biblioref">n.d.</a>)</span> så har Region Uppsala beräknat andelarna själva efter kalibreringsvikter. Det är denna data som används när enkätresultat från liv och hälsa vuxen visas på kommunnivå, då enkäten har stratifierats ut till flera personer i länets kommuner.</p>
-<p>Gällande data från <span class="citation" data-cites="region_uppsala_liv_halsa_ung">Liv och hälsa ung-Region Uppsala (<a href="#ref-region_uppsala_liv_halsa_ung" role="doc-biblioref">n.d.</a>)</span> så har kalibreringsvikter inte tillämpats, eftersom det faktiska bortfallet inte kan beräknas exakt utan måste uppskattas. Det innebär att eventuella snedfördelningar i vilka som svarat på enkäten inte har korrigerats, vilket kan göra att resultaten inte fullt ut speglar den faktiska befolkningen. Resultaten bör därför tolkas med försiktighet, särskilt vid jämförelser mellan grupper och kommuner.</p>
+<p>Denna delrapport redovisar folkhälsan i Uppsala län med fokus på fysisk hälsa, med avsnitt om tandhälsa, diabetes samt allergi och astma. Rapporten ingår i en serie där länets folkhälsoutveckling följs över tid.</p>
+<section id="om-statistiken" class="level2">
+<h2 class="anchored" data-anchor-id="om-statistiken">Om statistiken</h2>
+<p>I Uppsala län följs den fysiska hälsan bland annat genom den nationella folkhälsoenkäten, där invånarna bland annat tillfrågas om sin tandhälsa, fysiska aktivitet och besvär av sjukdomar. Enkäten genomförs av <span class="citation" data-cites="folkhalsomyndigheten_nfhe">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten_nfhe" role="doc-biblioref">u.å.</a>)</span> och är en undersökning om den svenska befolkningens hälsa, med syfte att se hur befolkningen mår över tid.</p>
+<p>För data från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span> så har Region Uppsala beräknat andelarna själva efter kalibreringsvikter. Det är denna data som används när enkätresultat från Hälsa på lika villkor visas på kommunnivå, då enkäten har stratifierats ut till flera personer i länets kommuner.</p>
+<p>Gällande data från <span class="citation" data-cites="region_uppsala_liv_halsa_ung">Liv och hälsa ung (<a href="#ref-region_uppsala_liv_halsa_ung" role="doc-biblioref">u.å.</a>)</span> så har kalibreringsvikter inte tillämpats, eftersom det faktiska bortfallet inte kan beräknas exakt utan måste uppskattas. Det innebär att eventuella snedfördelningar i vilka som svarat på enkäten inte har korrigerats, vilket kan göra att resultaten inte fullt ut speglar den faktiska befolkningen. Resultaten bör därför tolkas med försiktighet, särskilt vid jämförelser mellan grupper och kommuner.</p>
+<p>De konfidensintervall som redovisas har konfidensgraden 95 %. Ett sådant intervall beräknas med en metod som vid upprepade urval täcker det sanna värdet i 95 % av fallen. Överlappande konfidensintervall innebär inte automatiskt att skillnaden mellan två grupper saknar statistisk signifikans; detta behöver bedömas med ett särskilt test. <strong>Det innebär inte heller att det med säkerhet saknas en skillnad.</strong> Det kan finnas en reell skillnad, men osäkerheten i materialet kan vara för stor för att den ska kunna styrkas statistiskt.</p>
 <div class="callout callout-style-default callout-note callout-titled">
 <div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
@@ -267,33 +252,25 @@ window.Quarto = {
 <div class="callout-body-container callout-body">
 <p>Beräkningarna görs med funktioner från R-paketet <span class="citation" data-cites="surveyPackage">Lumley (<a href="#ref-surveyPackage" role="doc-biblioref">2024</a>)</span>, vilket implementerar design-baserad inferens för urvalsundersökningar <span class="citation" data-cites="lumley2004">Lumley (<a href="#ref-lumley2004" role="doc-biblioref">2004</a>)</span> <span class="citation" data-cites="lumley2010">Lumley (<a href="#ref-lumley2010" role="doc-biblioref">2010</a>)</span>.</p>
 <p>I analysen används ett survey-designobjekt av typen</p>
-<p><span class="math display">\[
-\text{svydesign}(ids = \sim 1,\; weights = \sim w_i,\; data = df)
-\]</span></p>
+<p><span class="math display">\[\text{svydesign}(ids = \sim 1,\; weights = \sim w_i,\; data = df)\]</span></p>
 <p>Att sätta <code>ids = ~1</code> innebär att ingen klustring specificeras och att varje observation behandlas som en egen primär urvalsenhet (PSU). Variansskattningarna reduceras därmed till motsvarande designbaserade estimatorer utan klusterstruktur.</p>
 <section id="skattning-av-andelar" class="level2">
 <h2 class="anchored" data-anchor-id="skattning-av-andelar">Skattning av andelar</h2>
 <p>För varje nivå (l) av variabeln (Y) skapas en indikatorvariabel</p>
-<p><span class="math display">\[
-I_i^{(l)} =
+<p><span class="math display">\[I_i^{(l)} =
 \begin{cases}
 1 &amp; \text{om } Y_i = l \\
 0 &amp; \text{annars}
-\end{cases}
-\]</span></p>
+\end{cases}\]</span></p>
 <p>Den designviktade andelen skattas som</p>
-<p><span class="math display">\[
-\hat{p}_l =
+<p><span class="math display">\[\hat{p}_l =
 \frac{\sum_{i=1}^{n} w_i I_i^{(l)}}
-{\sum_{i=1}^{n} w_i}
-\]</span></p>
+{\sum_{i=1}^{n} w_i}\]</span></p>
 <p>där (w_i) är urvalsvikten för observation (i). Vikterna representerar kalibreringsjusteringar.</p>
 <p>När beräkningen görs inom grupper (g) (definierade av kommun och kön i denna rapport) beräknas andelen separat inom varje grupp:</p>
-<p><span class="math display">\[
-\hat{p}_{lg} =
+<p><span class="math display">\[\hat{p}_{lg} =
 \frac{\sum_{i \in g} w_i I_i^{(l)}}
-{\sum_{i \in g} w_i}
-\]</span></p>
+{\sum_{i \in g} w_i}\]</span></p>
 </section>
 <section id="variansskattning" class="level2">
 <h2 class="anchored" data-anchor-id="variansskattning">Variansskattning</h2>
@@ -304,608 +281,43 @@ I_i^{(l)} =
 <h2 class="anchored" data-anchor-id="konfidensintervall">Konfidensintervall</h2>
 <p>Konfidensintervallen beräknas med funktionen <code>svyciprop()</code> och metoden <code>"logit"</code>.</p>
 <p>Denna metod skattar först logit-transformerade parametrar</p>
-<p><span class="math display">\[
-\theta = \log\left(\frac{\hat{p}}{1-\hat{p}}\right)
-\]</span></p>
+<p><span class="math display">\[\theta = \log\left(\frac{\hat{p}}{1-\hat{p}}\right)\]</span></p>
 <p>och beräknar ett Wald-intervall på logit-skalan</p>
-<p><span class="math display">\[
-\theta \pm z_{0.975} \cdot SE(\theta)
-\]</span></p>
+<p><span class="math display">\[\theta \pm z_{0.975} \cdot SE(\theta)\]</span></p>
 <p>Därefter transformeras intervallet tillbaka till proportionsskalan med den logistiska funktionen</p>
-<p><span class="math display">\[
-p = \frac{1}{1 + e^{-\theta}}
-\]</span></p>
-<p>Den slutliga intervallet blir därför</p>
-<p><span class="math display">\[
-\left(
+<p><span class="math display">\[p = \frac{1}{1 + e^{-\theta}}\]</span></p>
+<p>Det slutliga intervallet blir därför</p>
+<p><span class="math display">\[\left(
 \frac{1}{1 + e^{-(\theta - z_{0.975}SE(\theta))}},
 \;
 \frac{1}{1 + e^{-(\theta + z_{0.975}SE(\theta))}}
-\right)
-\]</span></p>
+\right)\]</span></p>
 <p>Logit-metoden används eftersom den ger mer stabila konfidensintervall när andelar ligger nära (0) eller (1).</p>
 </section>
 </div>
 </div>
 </div>
-<section id="hälsobesvär" class="level2">
-<h2 class="anchored" data-anchor-id="hälsobesvär">Hälsobesvär</h2>
-<p>Delkapitlet redovisar andelen invånare per kommun i Uppsala län som uppger långvarig sjukdom, besvär efter olycksfall, nedsatt funktion eller annat långvarigt hälsoproblem, uppdelat på kön.</p>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-4" role="tab" aria-controls="tabset-1-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-5" role="tab" aria-controls="tabset-1-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-6" role="tab" aria-controls="tabset-1-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-7" role="tab" aria-controls="tabset-1-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-8" role="tab" aria-controls="tabset-1-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
-<img src="Figurer/halso_besvar_Enköping.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Enköping.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
-<img src="Figurer/halso_besvar_Heby.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Heby.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-3-tab">
-<img src="Figurer/halso_besvar_Håbo.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Håbo.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-4-tab">
-<img src="Figurer/halso_besvar_Knivsta.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Knivsta.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-5-tab">
-<img src="Figurer/halso_besvar_Tierp.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Tierp.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-6-tab">
-<img src="Figurer/halso_besvar_Uppsala.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Uppsala.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-7-tab">
-<img src="Figurer/halso_besvar_Älvkarleby.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-1-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-8-tab">
-<img src="Figurer/halso_besvar_Östhammar.svg" alt="Figuren visar andelarna av de som uppger att de har hälsobesvär från olycksfall, någon nedsatt funtion eller annat långvarigt hälsoproblem, i länets kommuner för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/halso_besvar_Östhammar.svg" download="">Som SVG</a><a href="Figurer/halso_besvar_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>I flera av länets kommuner är det omkring 30 till 50 % som anger att de har långvarig sjukdom, besvär efter olycksfall, någon nedsatt funktion eller annat långvarigt hälsoproblem.</p>
-<p>Någon statistiskt säkerställd skillnad mellan könen kan inte påvisas, eftersom konfidensintervallen överlappar inom samtliga kommuner.</p>
 </section>
-<section id="fysisk-aktivitet" class="level2">
-<h2 class="anchored" data-anchor-id="fysisk-aktivitet">Fysisk aktivitet</h2>
-<p>I detta delkapitel så visas andelen som uppger tillräcklig fysisk aktivitet, baserat på frågorna “Hur mycket tid ägnar du en vanlig vecka åt fysisk träning som får dig att bli andfådd, till exempel löpning, motionsgymnastik eller bollsport?” och “Hur mycket tid ägnar du en vanlig vecka åt vardagsaktiviteter, till exempel promenader, cykling eller trädgårdsarbete?”</p>
-<p>Frågorna ändrades efter 2016 och därav visas ej tidigare resultat.</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-fysisk_aktivitet" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för Uppsala län, över tid och uppdelat per kön.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-fysisk_aktivitet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/fysisk_aktivitet.svg" id="fig-fysisk_aktivitet" class="img-fluid figure-img" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för Uppsala län, över tid och uppdelat per kön.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-fysisk_aktivitet-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;1
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div style="margin-top:0.5rem;">
-  <div class="download-dropdown">
-    <span class="download-btn">Ladda ner</span>
-    <div class="download-menu">
-      <a href="Figurer/fysisk_aktivitet.svg" download="">Som SVG</a>
-      <a href="Figurer/fysisk_aktivitet.png" download="">Som PNG</a>
-    </div>
-  </div>
-</div>
-<p>Omkring 70 procent av länets invånare uppger att de är fysiskt aktiva minst 150 minuter i veckan. Konfidensintervallen överlappar mellan könen, vilket innebär att någon statistiskt säkerställd skillnad inte kan påvisas på länsnivå.</p>
-<p>Andelen fysiskt aktiva är något högre i länet än i riket, det gäller framför allt för kvinnor, där rikssnittet är omkring 65%.</p>
-<section id="kommunnivå" class="level3">
-<h3 class="anchored" data-anchor-id="kommunnivå">Kommunnivå</h3>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
-<img src="Figurer/fysisk_aktivitet_Enköping.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Enköping.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
-<img src="Figurer/fysisk_aktivitet_Heby.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Heby.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
-<img src="Figurer/fysisk_aktivitet_Håbo.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Håbo.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
-<img src="Figurer/fysisk_aktivitet_Knivsta.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Knivsta.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
-<img src="Figurer/fysisk_aktivitet_Tierp.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Tierp.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
-<img src="Figurer/fysisk_aktivitet_Uppsala.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Uppsala.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
-<img src="Figurer/fysisk_aktivitet_Älvkarleby.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
-<img src="Figurer/fysisk_aktivitet_Östhammar.svg" alt="Figuren visar andelarna för de som uppger sig vara fysisk aktiva minst 150 minuter i veckan, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/fysisk_aktivitet_Östhammar.svg" download="">Som SVG</a><a href="Figurer/fysisk_aktivitet_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Skillnaderna mellan könen inom kommunerna är små och inte statistiskt säkerställda. Däremot kan andelarna skilja sig markant mellan kommunerna. Exempelvis är andelen fysiskt aktiva kvinnor i Knivsta betydligt högre än i Älvkarleby. En möjlig förklaring är skillnader i åldersstruktur, Knivsta har en yngre befolkning än Älvkarleby.</p>
-</section>
-<section id="skolelever" class="level3">
-<h3 class="anchored" data-anchor-id="skolelever">Skolelever</h3>
-<p>Nedan redovisas andelen skolelever i länets kommuner som uppger att de i genomsnitt cyklar, går eller idrottar minst 30 minuter per dag, uppdelat på kön. Data hämtas från Liv och hälsa ung.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-8" role="tab" aria-controls="tabset-3-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
-<img src="Figurer/rorelse_skola_Enköping.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Enköping.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
-<img src="Figurer/rorelse_skola_Heby.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Heby.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
-<img src="Figurer/rorelse_skola_Håbo.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Håbo.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
-<img src="Figurer/rorelse_skola_Knivsta.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Knivsta.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
-<img src="Figurer/rorelse_skola_Tierp.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Tierp.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
-<img src="Figurer/rorelse_skola_Uppsala.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Uppsala.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-7-tab">
-<img src="Figurer/rorelse_skola_Älvkarleby.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-3-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-8-tab">
-<img src="Figurer/rorelse_skola_Östhammar.svg" alt="Figuren visar andelen skolelever som uppger att de cyklar, går eller idrottar  i snitt minst 30 minuter per dag, uppdelat per kön i länets kommuner." style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/rorelse_skola_Östhammar.svg" download="">Som SVG</a><a href="Figurer/rorelse_skola_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Andelen elever som uppger att de i snitt cyklar, går eller idrottar minst 30 min dagligen uppgår till omkring 75 % eller mer i flera av länets kommuner.</p>
-</section>
-</section>
-<section id="stillasittande" class="level2">
-<h2 class="anchored" data-anchor-id="stillasittande">Stillasittande</h2>
-<p>I detta avsnitt redovisas hur länge invånarna i Uppsala län sitter stilla under ett normalt dygn, exklusive sömn, baserat på frågan Hur mycket sitter du under ett normalt dygn om man räknar bort sömn?</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Riket</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Södermanlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Östergötlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Örebro län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-6" role="tab" aria-controls="tabset-4-6" aria-selected="false" href="">Västmanlands län</a></li></ul>
-<div class="tab-content">
-<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
-<img src="Figurer/stillasittande_Riket.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Riket , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Riket.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Riket.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
-<img src="Figurer/stillasittande_Uppsala län.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Uppsala län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Uppsala län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
-<img src="Figurer/stillasittande_Södermanlands län.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Södermanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Södermanlands län.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Södermanlands län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
-<img src="Figurer/stillasittande_Östergötlands län.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Östergötlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Östergötlands län.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Östergötlands län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
-<img src="Figurer/stillasittande_Örebro län.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Örebro län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Örebro län.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Örebro län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-4-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-6-tab">
-<img src="Figurer/stillasittande_Västmanlands län.svg" alt="Figuren visar andelarna för stillasittare uppdelat i grupper efter hur länge de är stillasittande på fritiden i Västmanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/stillasittande_Västmanlands län.svg" download="">Som SVG</a><a href="Figurer/stillasittande_Västmanlands län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p><strong>Notera</strong> att y-axeln ej går mellan 0 och 100 utan endast till 50. Att intervallen är markant smalare för riket är på grund av mängden svar, vilket minskar osäkerheten.</p>
-<p>Andelen som sitter stilla länge under dagen verkar öka i Uppsala län. Det gäller framför allt grupperna som sitter 7–9 timmar respektive minst 10 timmar per dygn. Bland män i länet är den vanligaste kategorin vid den senaste mätningen minst 10 timmar per dygn, vilket skiljer sig från riksnivån där den största gruppen sitter 4–6 timmar.</p>
-<p>Skillnaderna mellan de flesta grupperna är inte statistiskt säkerställda eftersom konfidensintervallen överlappar. Däremot är andelen som sitter högst 3 timmar per dygn tydligt lägre än övriga grupper, för både män och kvinnor, under de senaste åren.</p>
-</section>
-</section>
-<section id="tandhälsa" class="level1">
-<h1>Tandhälsa</h1>
-<p><a href="#fig-tandhalsa" class="quarto-xref">Figur&nbsp;2</a> visar andelen som uppger bra respektive dålig tandhälsa, baserat på frågan “Hur tycker du att din tandhälsa är?”.</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-tandhalsa" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för Uppsala län, över tid och uppdelat per kön.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-tandhalsa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/tandhalsa.svg" id="fig-tandhalsa" class="img-fluid figure-img" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för Uppsala län, över tid och uppdelat per kön.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tandhalsa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;2
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div style="margin-top:0.5rem;">
-  <div class="download-dropdown">
-    <span class="download-btn">Ladda ner</span>
-    <div class="download-menu">
-      <a href="Figurer/tandhalsa.svg" download="">Som SVG</a>
-      <a href="Figurer/tandhalsa.png" download="">Som PNG</a>
-    </div>
-  </div>
-</div>
-<p>Andelen som uppger god tandhälsa är något högre bland kvinnor än bland män, både i Uppsala län och i riket, men skillnaden är liten och inte statistiskt säkerställd. Nivåerna har varit stabila över tid och någon tydlig förändring syns inte mellan mätperiodens början och slut.</p>
-<section id="kommunnivå-1" class="level3">
-<h3 class="anchored" data-anchor-id="kommunnivå-1">Kommunnivå</h3>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-6" role="tab" aria-controls="tabset-5-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-7" role="tab" aria-controls="tabset-5-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-8" role="tab" aria-controls="tabset-5-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
-<img src="Figurer/tandhalsa_Enköping.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Enköping.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
-<img src="Figurer/tandhalsa_Heby.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Heby.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
-<img src="Figurer/tandhalsa_Håbo.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Håbo.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
-<img src="Figurer/tandhalsa_Knivsta.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Knivsta.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-5-tab">
-<img src="Figurer/tandhalsa_Tierp.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Tierp.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-6-tab">
-<img src="Figurer/tandhalsa_Uppsala.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Uppsala.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-7-tab">
-<img src="Figurer/tandhalsa_Älvkarleby.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-5-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-8-tab">
-<img src="Figurer/tandhalsa_Östhammar.svg" alt="Figuren visar andelar för de som uppgett en bra eller dålig tandhälsa, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tandhalsa_Östhammar.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Inom varje kommun så är de största andelarna för svaren ‘Mycket bra’ eller ‘Ganska bra’, detta gäller oavsett kön. Det är en liten andel i varje kommun som svarat ‘Mycket dålig’.</p>
-</section>
-<section id="avstått-trots-behov" class="level2">
-<h2 class="anchored" data-anchor-id="avstått-trots-behov">Avstått trots behov</h2>
-<p><a href="#fig-tandhalsa_behov" class="quarto-xref">Figur&nbsp;3</a> visar andelen som avstått från tandläkarvård trots att de upplevde ett behov, utifrån frågorna “Har du under de senaste tre månaderna ansett dig vara i behov av tandläkarvård men ändå avstått från att söka vård?” och “Vilken var orsaken eller orsakerna till att du inte sökte tandläkarvård?”.</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div id="fig-tandhalsa_behov" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelar för de som angett att de avstått tandläkarvård trots behov, visas för Uppsala län, över tid och uppdelat per kön.">
-<figure class="quarto-float quarto-float-fig figure">
-<div aria-describedby="fig-tandhalsa_behov-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/tandhalsa_behov.svg" id="fig-tandhalsa_behov" class="img-fluid figure-img" alt="Figuren visar andelar för de som angett att de avstått tandläkarvård trots behov, visas för Uppsala län, över tid och uppdelat per kön.">
-</div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tandhalsa_behov-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;3
-</figcaption>
-</figure>
-</div>
-</div>
-</div>
-<div style="margin-top:0.5rem;">
-  <div class="download-dropdown">
-    <span class="download-btn">Ladda ner</span>
-    <div class="download-menu">
-      <a href="Figurer/tandhalsa_behov.svg" download="">Som SVG</a>
-      <a href="Figurer/tandhalsa_behov.png" download="">Som PNG</a>
-    </div>
-  </div>
-</div>
-<p>Bland dem som avstått från tandläkarvård trots upplevt behov uppger ungefär hälften att ekonomi är den främsta orsaken. Mönstret har varit stabilt över tid. Skillnaderna mellan män och kvinnor är små och inte statistiskt säkerställda.</p>
+<section id="om-enkätdata" class="level2">
+<h2 class="anchored" data-anchor-id="om-enkätdata">Om enkätdata</h2>
+<p>Rapporten bygger på en stor del enkätdata. Enkätdata är ett värdefullt underlag, men alltid förenat med viss osäkerhet. Alla som får en enkät svarar inte, vilket leder till bortfall. Om vissa grupper systematiskt avstår från att svara kan resultaten bli missvisande. Därtill förekommer internt bortfall, det vill säga när respondenter inte besvarar enskilda frågor.</p>
+<p>Eftersom enkäter bygger på självrapportering kan svaren dessutom påverkas av missförstånd, minnesfel eller att man vill ge ett socialt önskvärt svar.</p>
+<p>Resultaten behöver därför inte fullt ut spegla hela befolkningen. Osäkerheten blir särskilt stor när man bryter ner materialet på mindre grupper, till exempel efter kön, födelseland eller kommun. I sådana fall är antalet svar ofta färre, vilket gör resultaten mer osäkra och känsliga för enskilda observationer.</p>
 </section>
 </section>
 <section id="diabetes" class="level1">
 <h1>Diabetes</h1>
-<p>I detta kapitel visas antalet nya fall av diabetes typ 2 per 100 000 invånare i Uppsala län, jämfört med riket och närliggande län. Värdena är åldersstandardiserade för att möjliggöra rättvisa jämförelser mellan områden med olika ålderssammansättning.</p>
-<p>Folkhälsomyndigheten hämtar data från dynamiska register som löpande uppdateras och kan justeras bakåt i tiden. Små förändringar i det absoluta antalet fall får stora genomslag i kommuner med få invånare när måttet relateras till befolkningsstorleken. Åldersstandardisering används för att möjliggöra jämförelser mellan kommuner med olika ålderssammansättning. För information om den standardpopulation som används, se avsnittet Definitioner, kommentarer och källor.</p>
-<p>“Åldersstandardisering görs för att ta hänsyn till att åldersfördelningen kan se olika ut i olika grupper i befolkningen. För att göra det lättare att jämföra kommuners värden, används åldersstandardisering därför där det är möjligt.” <span class="citation" data-cites="folkhalsomyndigheten_definitioner">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten_definitioner" role="doc-biblioref">2025a</a>)</span></p>
-<p>Data hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span> som hänvisar till <span class="citation" data-cites="ndr_registercentrum">Nationella Diabetesregistret (<a href="#ref-ndr_registercentrum" role="doc-biblioref">2026</a>)</span> och <span class="citation" data-cites="socialstyrelsen_en">National Board of Health and Welfare (Socialstyrelsen) (<a href="#ref-socialstyrelsen_en" role="doc-biblioref">2026</a>)</span>.</p>
+<p>Nedan visas antalet nya fall av diabetes typ 2 per 100 000 invånare i Uppsala län, jämfört med riket och närliggande län. Siffrorna är åldersstandardiserade för att ta hänsyn till att åldersfördelningen kan se olika ut mellan grupper i befolkningen.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>, som hänvisar till <span class="citation" data-cites="ndr_registercentrum">Nationella Diabetesregistret (<a href="#ref-ndr_registercentrum" role="doc-biblioref">2026</a>)</span> och <span class="citation" data-cites="socialstyrelsen_en">National Board of Health and Welfare (Socialstyrelsen) (<a href="#ref-socialstyrelsen_en" role="doc-biblioref">2026</a>)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-diabetes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar ålderstandardiserade antalet nya diabetesfall i länet, riket och de närliggande länen, över tid och uppdelat på kön">
+<div id="fig-diabetes" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar det åldersstandardiserade antalet nya diabetesfall i länet, riket och de närliggande länen över tid, uppdelat på kön">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-diabetes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/diabetes.svg" id="fig-diabetes" class="img-fluid figure-img" alt="Figuren visar ålderstandardiserade antalet nya diabetesfall i länet, riket och de närliggande länen, över tid och uppdelat på kön">
+<img src="Figurer/diabetes.svg" id="fig-diabetes" class="img-fluid figure-img" alt="Figuren visar det åldersstandardiserade antalet nya diabetesfall i länet, riket och de närliggande länen över tid, uppdelat på kön">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-diabetes-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;4
+Figur&nbsp;1
 </figcaption>
 </figure>
 </div>
@@ -920,120 +332,22 @@ Figur&nbsp;4
     </div>
   </div>
 </div>
-<p>I riket och de flesta jämförda länen syns en ökande trend för nya fall av diabetes typ 2, för både män och kvinnor. Uppsala län sticker ut: här ligger antalet nya fall på samma eller lägre nivåer jämfört med mätperiodens början.</p>
-<p>Uppsala län har genomgående det lägsta antalet nya fall bland de redovisade länen för de senaste åren.</p>
-<section id="kommunnivå-2" class="level3">
-<h3 class="anchored" data-anchor-id="kommunnivå-2">Kommunnivå</h3>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-6" role="tab" aria-controls="tabset-6-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-7" role="tab" aria-controls="tabset-6-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-8" role="tab" aria-controls="tabset-6-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
-<img src="Figurer/diabetes_Enköping.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Enköping.svg" download="">Som SVG</a><a href="Figurer/diabetes_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
-<img src="Figurer/diabetes_Heby.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Heby.svg" download="">Som SVG</a><a href="Figurer/diabetes_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
-<img src="Figurer/diabetes_Håbo.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Håbo.svg" download="">Som SVG</a><a href="Figurer/diabetes_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
-<img src="Figurer/diabetes_Knivsta.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Knivsta.svg" download="">Som SVG</a><a href="Figurer/diabetes_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
-<img src="Figurer/diabetes_Tierp.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Tierp.svg" download="">Som SVG</a><a href="Figurer/diabetes_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-6-tab">
-<img src="Figurer/diabetes_Uppsala.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Uppsala.svg" download="">Som SVG</a><a href="Figurer/diabetes_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-7-tab">
-<img src="Figurer/diabetes_Älvkarleby.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/diabetes_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-6-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-8-tab">
-<img src="Figurer/diabetes_Östhammar.svg" alt="Figuren visar andelar för om man uppger att man har diabetes eller ej, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/diabetes_Östhammar.svg" download="">Som SVG</a><a href="Figurer/diabetes_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>I Älvkarleby så är det en signifikant högre andel män som svarat att de har diabetes jämfört med kvinnor. I övriga kommuner i länet så är det ingen signifikant skillnad mellan könen.</p>
-</section>
+<p>I riket och de flesta jämförda länen syns en ökande trend för nya fall av diabetes typ 2, för både män och kvinnor.</p>
+<p>Uppsala län sticker ut: antalet nya fall är lägst bland de redovisade länen under de senaste åren, och vid den senaste mätningen är nivåerna lägre än vid mätperiodens början.</p>
 </section>
 <section id="högt-blodtryck" class="level1">
 <h1>Högt blodtryck</h1>
-<p>I detta kapitel så visas andelen som uppger att de har högt blodtryck på frågan “Har du högt blodtryck? Svaren är uppdelade i tre svårighetsgrader: inga besvär, lätta besvär och svåra besvär och ja, svåra besvär.</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
+<p><a href="#fig-blodtryck" class="quarto-xref">Figur&nbsp;2</a> visar andelen i Uppsala län som uppger att de har högt blodtryck, uppdelat på kön och utifrån fyraårsmedelvärden.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
 <div id="fig-blodtryck" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas över tid och uppdelat per kön.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-blodtryck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/blodtryck.svg" id="fig-blodtryck" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas över tid och uppdelat per kön.">
+<img src="Figurer/hogt_blodtryck.svg" id="fig-blodtryck" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas över tid och uppdelat per kön.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-blodtryck-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;5
+Figur&nbsp;2
 </figcaption>
 </figure>
 </div>
@@ -1043,125 +357,264 @@ Figur&nbsp;5
   <div class="download-dropdown">
     <span class="download-btn">Ladda ner</span>
     <div class="download-menu">
-      <a href="Figurer/blodtryck.svg" download="">Som SVG</a>
-      <a href="Figurer/blodtryck.png" download="">Som PNG</a>
+      <a href="Figurer/hogt_blodtryck.svg" download="">Som SVG</a>
+      <a href="Figurer/hogt_blodtryck.png" download="">Som PNG</a>
     </div>
   </div>
 </div>
-<p>Det är en ökande andel som uppger att de har högt blodtryck i länet, liknande trend syns för båda könen. För män så har andelen ökat från runt 20 % till omkring 30 %.</p>
-<p>Ökande trender för besvär syns inte lika tydligt, det är möjligt att det är något högre värden för de senaste åren. För svåra besvär syns ingen tydlig förändring över tid.</p>
-<section id="kommunnivå-3" class="level3">
-<h3 class="anchored" data-anchor-id="kommunnivå-3">Kommunnivå</h3>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
+<p>Det är en ökande andel som uppger att de har högt blodtryck i länet, där ökningen varit mer påtaglig bland männen.</p>
+<p>I nedanstående figurer redovisas andelen i Uppsala län som uppger sig ha besvär respektive svåra besvär av högt blodtryck, uppdelat på kön och utifrån fyraårsmedelvärden.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-7-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-1" role="tab" aria-controls="tabset-7-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-2" role="tab" aria-controls="tabset-7-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-3" role="tab" aria-controls="tabset-7-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-4" role="tab" aria-controls="tabset-7-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-5" role="tab" aria-controls="tabset-7-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-6" role="tab" aria-controls="tabset-7-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-7" role="tab" aria-controls="tabset-7-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-7-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-7-8" role="tab" aria-controls="tabset-7-8" aria-selected="false" href="">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Besvär</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Svåra besvär</a></li></ul>
 <div class="tab-content">
-<div id="tabset-7-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-7-1-tab">
-<img src="Figurer/blodtryck_Enköping.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Figurer/blodtryck_besvar.svg" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas över tid och uppdelat per kön."></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="margin-top:0.5rem;">
+  <div class="download-dropdown">
+    <span class="download-btn">Ladda ner</span>
+    <div class="download-menu">
+      <a href="Figurer/blodtryck_besvar.svg" download="">Som SVG</a>
+      <a href="Figurer/blodtryck_besvar.png" download="">Som PNG</a>
+    </div>
+  </div>
+</div>
+</div>
+<div id="tabset-1-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-1-2-tab">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="Figurer/blodtryck_svara_besvar.svg" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har svåra besvär av högt blodtryck, uppdelat på kommun och kön."></p>
+</figure>
+</div>
+</div>
+</div>
+<div style="margin-top:0.5rem;">
+  <div class="download-dropdown">
+    <span class="download-btn">Ladda ner</span>
+    <div class="download-menu">
+      <a href="Figurer/blodtryck_svara_besvar.svg" download="">Som SVG</a>
+      <a href="Figurer/blodtryck_svara_besvar.png" download="">Som PNG</a>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+<p>Trots den ökade andelen med högt blodtryck i länet är andelen som uppger att de har besvär med högt blodtryck förhållandevis konstant över tid.</p>
+<section id="kommunnivå" class="level3">
+<h3 class="anchored" data-anchor-id="kommunnivå">Kommunnivå</h3>
+<p>Nedan presenteras andelen som svarat att de har högt blodtryck, uppdelat på kommun och kön.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-2-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-1" role="tab" aria-controls="tabset-2-1" aria-selected="true" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-2" role="tab" aria-controls="tabset-2-2" aria-selected="false" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-3" role="tab" aria-controls="tabset-2-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-4" role="tab" aria-controls="tabset-2-4" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-5" role="tab" aria-controls="tabset-2-5" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-6" role="tab" aria-controls="tabset-2-6" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-7" role="tab" aria-controls="tabset-2-7" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-8" role="tab" aria-controls="tabset-2-8" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-2-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-2-9" role="tab" aria-controls="tabset-2-9" aria-selected="false" href="">Östhammar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-2-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-2-1-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Uppsala län.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Enköping.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Enköping.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_line_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Uppsala län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-7-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-2-tab">
-<img src="Figurer/blodtryck_Heby.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/hogt_blodtryck_kom_bar_Uppsala län.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Heby.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Heby.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_bar_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Uppsala län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-7-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-3-tab">
-<img src="Figurer/blodtryck_Håbo.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-2-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-2-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Enköping.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Håbo.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Håbo.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_line_Enköping.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Enköping.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-7-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-4-tab">
-<img src="Figurer/blodtryck_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/hogt_blodtryck_kom_bar_Enköping.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Knivsta.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Knivsta.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_bar_Enköping.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Enköping.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-7-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-5-tab">
-<img src="Figurer/blodtryck_Tierp.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-2-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-3-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Håbo.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Tierp.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Tierp.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_line_Håbo.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Håbo.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-7-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-6-tab">
-<img src="Figurer/blodtryck_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/hogt_blodtryck_kom_bar_Håbo.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Uppsala.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Uppsala.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_bar_Håbo.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Håbo.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-7-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-7-tab">
-<img src="Figurer/blodtryck_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-2-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-4-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Heby.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Älvkarleby.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_line_Heby.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Heby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-7-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-7-8-tab">
-<img src="Figurer/blodtryck_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/hogt_blodtryck_kom_bar_Heby.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/blodtryck_Östhammar.svg" download="">Som SVG</a><a href="Figurer/blodtryck_Östhammar.png" download="">Som PNG</a>
+<a href="Figurer/hogt_blodtryck_kom_bar_Heby.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Heby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-5-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_line_Knivsta.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Knivsta.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+<img src="Figurer/hogt_blodtryck_kom_bar_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_bar_Knivsta.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Knivsta.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-6-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Tierp.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_line_Tierp.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Tierp.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+<img src="Figurer/hogt_blodtryck_kom_bar_Tierp.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_bar_Tierp.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Tierp.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-7-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_line_Uppsala.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Uppsala.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+<img src="Figurer/hogt_blodtryck_kom_bar_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_bar_Uppsala.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Uppsala.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-8-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_line_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+<img src="Figurer/hogt_blodtryck_kom_bar_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_bar_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-2-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-2-9-tab">
+<img src="Figurer/hogt_blodtryck_kom_line_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har högt blodtryck, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_line_Östhammar.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_line_Östhammar.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+<img src="Figurer/hogt_blodtryck_kom_bar_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har besvär av högt blodtryck, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/hogt_blodtryck_kom_bar_Östhammar.svg" download="">Som SVG</a><a href="Figurer/hogt_blodtryck_kom_bar_Östhammar.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>Andelarna skiljer sig lite mellan kommunerna i länet. Det är däremot ingen signifikant skillnad mellan könen inom kommunerna.</p>
+<p>Andelen med högt blodtryck varierar från cirka 20 till 35 procent mellan kommunerna i länet. Det är ingen signifikant skillnad mellan könen inom någon av kommunerna.</p>
 </section>
 </section>
 <section id="allergi" class="level1">
 <h1>Allergi</h1>
-<p><a href="#fig-allergi" class="quarto-xref">Figur&nbsp;6</a> visar andelen som uppger besvär av allergi, baserat på frågan “Har du någon eller några av följande sjukdomar – allergi?”. Svaren är uppdelade i lätta respektive svåra besvär.</p>
-<p>Data är hämtat från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
+<p><a href="#fig-allergi" class="quarto-xref">Figur&nbsp;3</a> visar andelen som uppger besvär av allergi, uppdelat på kön och grad av besvär.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-allergi" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelen som uppgett att de har besvär av allergi, visas över tid och uppdelat per kön.">
+<div id="fig-allergi" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelen som uppgett att de har besvär av allergi, uppdelat på kommun och kön.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-allergi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/allergi.svg" id="fig-allergi" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har besvär av allergi, visas över tid och uppdelat per kön.">
+<img src="Figurer/allergi.svg" id="fig-allergi" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har besvär av allergi, uppdelat på kommun och kön.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-allergi-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;6
+Figur&nbsp;3
 </figcaption>
 </figure>
 </div>
@@ -1181,17 +634,17 @@ Figur&nbsp;6
 </section>
 <section id="astma" class="level1">
 <h1>Astma</h1>
-<p>Detta kapitel visar andelen som uppger besvär av astma. Svaren är uppdelade i lätta respektive svåra besvär.</p>
-<p>Data hämtas från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
+<p>I <a href="#fig-astma" class="quarto-xref">Figur&nbsp;4</a> visas andelen som uppger besvär av astma, uppdelat på kön och grad av besvär.</p>
+<p>Data hämtas från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="cell">
 <div class="cell-output-display">
-<div id="fig-astma" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelen som uppgett att de har besvär av astma, visas över tid och uppdelat per kön.">
+<div id="fig-astma" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren redogör andelen som uppgett att de har besvär av astma, och visas över tid och uppdelat per kön.">
 <figure class="quarto-float quarto-float-fig figure">
 <div aria-describedby="fig-astma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img src="Figurer/astma.svg" id="fig-astma" class="img-fluid figure-img" alt="Figuren visar andelen som uppgett att de har besvär av astma, visas över tid och uppdelat per kön.">
+<img src="Figurer/astma.svg" id="fig-astma" class="img-fluid figure-img" alt="Figuren redogör andelen som uppgett att de har besvär av astma, och visas över tid och uppdelat per kön.">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-astma-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-Figur&nbsp;7
+Figur&nbsp;4
 </figcaption>
 </figure>
 </div>
@@ -1206,397 +659,210 @@ Figur&nbsp;7
     </div>
   </div>
 </div>
-<p>Andelen som uppger lätta besvär av astma har ökat svagt över tid, medan andelen med svåra besvär ligger kvar på ungefär samma nivå.</p>
-<p>Under de senaste åren uppger kvinnor i Uppsala län astmabesvär i något högre utsträckning än män. Konfidensintervallen har gått från att tydligt överlappa till att knappt överlappa, vilket antyder en växande skillnad mellan könen, men den är ännu inte statistiskt säkerställd. Det är värt att följa om skillnaden fortsätter att öka.</p>
-<section id="kommunnivå-4" class="level3">
-<h3 class="anchored" data-anchor-id="kommunnivå-4">Kommunnivå</h3>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
+<p>Andelen som uppger lätta besvär av astma har ökat under de senaste åren, där kvinnor står för majoriteten av ökningen. Andelen kvinnor med astmabesvär är högre än männens, även om skillnaden inte är statistiskt signifikant.</p>
+<p>Andelen med svåra besvär ligger kvar på ungefär samma nivå på ett par procent av befolkningen, och även här är andelen kvinnor med besvär något högre än männen.</p>
+<section id="kommunnivå-1" class="level3">
+<h3 class="anchored" data-anchor-id="kommunnivå-1">Kommunnivå</h3>
+<p>Nedan presenteras andelen som svarat att de har astma, uppdelat på kommun och kön.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-8-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-1" role="tab" aria-controls="tabset-8-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-2" role="tab" aria-controls="tabset-8-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-3" role="tab" aria-controls="tabset-8-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-4" role="tab" aria-controls="tabset-8-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-5" role="tab" aria-controls="tabset-8-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-6" role="tab" aria-controls="tabset-8-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-7" role="tab" aria-controls="tabset-8-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-8-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-8-8" role="tab" aria-controls="tabset-8-8" aria-selected="false" href="">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-3-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-1" role="tab" aria-controls="tabset-3-1" aria-selected="true" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-2" role="tab" aria-controls="tabset-3-2" aria-selected="false" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-3" role="tab" aria-controls="tabset-3-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-4" role="tab" aria-controls="tabset-3-4" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-5" role="tab" aria-controls="tabset-3-5" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-6" role="tab" aria-controls="tabset-3-6" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-7" role="tab" aria-controls="tabset-3-7" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-8" role="tab" aria-controls="tabset-3-8" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-3-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-3-9" role="tab" aria-controls="tabset-3-9" aria-selected="false" href="">Östhammar</a></li></ul>
 <div class="tab-content">
-<div id="tabset-8-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-8-1-tab">
-<img src="Figurer/astma_Enköping.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-3-1-tab">
+<img src="Figurer/astma_kom_line_Uppsala län.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Enköping.svg" download="">Som SVG</a><a href="Figurer/astma_Enköping.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Uppsala län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-8-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-2-tab">
-<img src="Figurer/astma_Heby.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Uppsala län.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Heby.svg" download="">Som SVG</a><a href="Figurer/astma_Heby.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Uppsala län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-8-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-3-tab">
-<img src="Figurer/astma_Håbo.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-2-tab">
+<img src="Figurer/astma_kom_line_Enköping.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Håbo.svg" download="">Som SVG</a><a href="Figurer/astma_Håbo.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Enköping.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Enköping.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-8-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-4-tab">
-<img src="Figurer/astma_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Enköping.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Knivsta.svg" download="">Som SVG</a><a href="Figurer/astma_Knivsta.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Enköping.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Enköping.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-8-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-5-tab">
-<img src="Figurer/astma_Tierp.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-3-tab">
+<img src="Figurer/astma_kom_line_Håbo.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Tierp.svg" download="">Som SVG</a><a href="Figurer/astma_Tierp.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Håbo.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Håbo.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-8-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-6-tab">
-<img src="Figurer/astma_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Håbo.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Uppsala.svg" download="">Som SVG</a><a href="Figurer/astma_Uppsala.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Håbo.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Håbo.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-8-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-7-tab">
-<img src="Figurer/astma_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-4-tab">
+<img src="Figurer/astma_kom_line_Heby.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/astma_Älvkarleby.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Heby.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Heby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-8-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-8-8-tab">
-<img src="Figurer/astma_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har astma, visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Heby.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/astma_Östhammar.svg" download="">Som SVG</a><a href="Figurer/astma_Östhammar.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Heby.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Heby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-</div>
-</div>
-<p>Andelen som svarat att de har astma ser ut att vara relativt lika mellan länets kommuner. Ett värde som sticker ut är för kvinnor i Heby kommun, där en något högre andel uppger att de har astma, intervallet överlappar däremot med flera av de andra kommunerna vilket gör att skillnaden inte är signifikant.</p>
-</section>
-</section>
-<section id="huvudvärk-tinnitus-och-yrsel" class="level1">
-<h1>Huvudvärk, tinnitus och yrsel</h1>
-<p>Följande kapitel visar andelen som uppger besvär av huvudvärk eller migrän, öronsus (tinnitus) samt yrsel, baserat på frågorna “Har du någon eller några av följande besvär – huvudvärk eller migrän?, öronsus (tinnitus)?, yrsel?”. Resultaten visas uppdelade på besvär respektive svåra besvär.</p>
-<p>Data hämtas från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-9-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-1" role="tab" aria-controls="tabset-9-1" aria-selected="true" href="">Huvudvärk</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-2" role="tab" aria-controls="tabset-9-2" aria-selected="false" href="">Svår huvudvärk</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-3" role="tab" aria-controls="tabset-9-3" aria-selected="false" href="">Tinnitus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-4" role="tab" aria-controls="tabset-9-4" aria-selected="false" href="">Svåra besvär av tinnitus</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-5" role="tab" aria-controls="tabset-9-5" aria-selected="false" href="">Yrsel</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-9-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-9-6" role="tab" aria-controls="tabset-9-6" aria-selected="false" href="">Svåra besvär av yrsel</a></li></ul>
-<div class="tab-content">
-<div id="tabset-9-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-9-1-tab">
-<img src="Figurer/huvudvärk.svg" alt="Figuren visar andelarna för Huvudvärk , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-5-tab">
+<img src="Figurer/astma_kom_line_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/huvudvärk.svg" download="">Som SVG</a><a href="Figurer/huvudvärk.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Knivsta.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Knivsta.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
-</div>
-<div id="tabset-9-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-2-tab">
-<img src="Figurer/svår huvudvärk.svg" alt="Figuren visar andelarna för Svår huvudvärk , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/svår huvudvärk.svg" download="">Som SVG</a><a href="Figurer/svår huvudvärk.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Knivsta.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Knivsta.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
 </div>
-<div id="tabset-9-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-3-tab">
-<img src="Figurer/tinnitus.svg" alt="Figuren visar andelarna för Tinnitus , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-6-tab">
+<img src="Figurer/astma_kom_line_Tierp.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/tinnitus.svg" download="">Som SVG</a><a href="Figurer/tinnitus.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Tierp.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Tierp.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
-</div>
-<div id="tabset-9-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-4-tab">
-<img src="Figurer/svåra besvär av tinnitus.svg" alt="Figuren visar andelarna för Svåra besvär av tinnitus , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Tierp.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/svåra besvär av tinnitus.svg" download="">Som SVG</a><a href="Figurer/svåra besvär av tinnitus.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Tierp.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Tierp.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
 </div>
-<div id="tabset-9-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-5-tab">
-<img src="Figurer/yrsel.svg" alt="Figuren visar andelarna för Yrsel , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-7-tab">
+<img src="Figurer/astma_kom_line_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/yrsel.svg" download="">Som SVG</a><a href="Figurer/yrsel.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Uppsala.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Uppsala.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
-</div>
-<div id="tabset-9-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-9-6-tab">
-<img src="Figurer/svåra besvär av yrsel.svg" alt="Figuren visar andelarna för Svåra besvär av yrsel , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/svåra besvär av yrsel.svg" download="">Som SVG</a><a href="Figurer/svåra besvär av yrsel.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Uppsala.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Uppsala.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-<p><b> Notera: </b> vissa grafer har 0 - 10 som y-axel och inte 0 - 100</p>
 </div>
-</div>
-</div>
-<p><em>Huvudvärk</em>: Kvinnor uppger huvudvärk i betydligt högre utsträckning än män, och skillnaden är statistiskt säkerställd. Båda könen visar en uppåtgående trend, vid den senaste mätningen uppger omkring 40 procent av kvinnorna och omkring 20 procent av männen i länet att de lider av huvudvärk. Mönstret återkommer för svår huvudvärk, där kvinnor också har en signifikant högre andel under de senaste åren.</p>
-<p><em>Tinnitus</em>: Till skillnad från huvudvärk är det en större andel män än kvinnor som uppger besvär av tinnitus. Konfidensintervallen ligger nära varandra utan att överlappa, vilket tyder på att skillnaden är statistiskt säkerställd. Andelen med tinnitus har ökat för båda könen över tid, vilket tyder på att det är ett växande folkhälsoproblem i Uppsala län. För svåra besvär av tinnitus överlappar däremot intervallen tydligt, och någon statistiskt säkerställd skillnad mellan könen går inte att fastställa.</p>
-<p><em>Yrsel</em>: Mönstret liknar det för huvudvärk, kvinnor uppger besvär av yrsel i högre utsträckning än män. Till skillnad från huvudvärk syns ingen tydlig trend över tid, utan andelarna ligger på ungefär samma nivåer under hela mätperioden.</p>
-<section id="kommunnivå-5" class="level2">
-<h2 class="anchored" data-anchor-id="kommunnivå-5">Kommunnivå</h2>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-10-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-1" role="tab" aria-controls="tabset-10-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-2" role="tab" aria-controls="tabset-10-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-3" role="tab" aria-controls="tabset-10-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-4" role="tab" aria-controls="tabset-10-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-5" role="tab" aria-controls="tabset-10-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-6" role="tab" aria-controls="tabset-10-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-7" role="tab" aria-controls="tabset-10-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-10-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-10-8" role="tab" aria-controls="tabset-10-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-10-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-10-1-tab">
-<img src="Figurer/tinnitus_Enköping.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-8-tab">
+<img src="Figurer/astma_kom_line_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/tinnitus_Enköping.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Enköping.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Älvkarleby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-10-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-2-tab">
-<img src="Figurer/tinnitus_Heby.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/tinnitus_Heby.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Heby.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Älvkarleby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-10-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-3-tab">
-<img src="Figurer/tinnitus_Håbo.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-3-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-3-9-tab">
+<img src="Figurer/astma_kom_line_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har astma, uppdelat på kommun, kön och år." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/tinnitus_Håbo.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Håbo.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_line_Östhammar.svg" download="">Som SVG</a><a href="Figurer/astma_kom_line_Östhammar.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-<div id="tabset-10-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-4-tab">
-<img src="Figurer/tinnitus_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<img src="Figurer/astma_kom_bar_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har besvär av astma, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/tinnitus_Knivsta.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-10-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-5-tab">
-<img src="Figurer/tinnitus_Tierp.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tinnitus_Tierp.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-10-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-6-tab">
-<img src="Figurer/tinnitus_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tinnitus_Uppsala.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-10-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-7-tab">
-<img src="Figurer/tinnitus_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tinnitus_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-10-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-10-8-tab">
-<img src="Figurer/tinnitus_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/tinnitus_Östhammar.svg" download="">Som SVG</a><a href="Figurer/tinnitus_Östhammar.png" download="">Som PNG</a>
+<a href="Figurer/astma_kom_bar_Östhammar.svg" download="">Som SVG</a><a href="Figurer/astma_kom_bar_Östhammar.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>I Heby och Håbo så är det en signifikant större andel män som har lätta besvär med tinnitus jämfört med kvinnor. I resterande kommuner syns liknande mönster, men utan bevis för att skillnaden är signifikant.</p>
-</section>
-<section id="skolelever-1" class="level2">
-<h2 class="anchored" data-anchor-id="skolelever-1">Skolelever</h2>
-<p>Figurerna nedan redovisar andelen skolelever i länets kommuner som svarat Stämmer delvis eller Stämmer helt på påståendet Jag har ofta huvudvärk, ont i magen eller illamående, hämtat från instrumentet Styrkor och svårigheter (SDQ-Sve). Data hämtas från Liv och hälsa ung.</p>
-<div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-11-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-1" role="tab" aria-controls="tabset-11-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-2" role="tab" aria-controls="tabset-11-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-3" role="tab" aria-controls="tabset-11-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-4" role="tab" aria-controls="tabset-11-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-5" role="tab" aria-controls="tabset-11-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-6" role="tab" aria-controls="tabset-11-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-7" role="tab" aria-controls="tabset-11-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-11-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-11-8" role="tab" aria-controls="tabset-11-8" aria-selected="false" href="">Östhammar</a></li></ul>
-<div class="tab-content">
-<div id="tabset-11-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-11-1-tab">
-<img src="Figurer/huvudvark_skola_Enköping.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Enköping.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Enköping.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-2-tab">
-<img src="Figurer/huvudvark_skola_Heby.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Heby.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Heby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-3-tab">
-<img src="Figurer/huvudvark_skola_Håbo.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Håbo.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Håbo.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-4-tab">
-<img src="Figurer/huvudvark_skola_Knivsta.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Knivsta.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Knivsta.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-5-tab">
-<img src="Figurer/huvudvark_skola_Tierp.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Tierp.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Tierp.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-6-tab">
-<img src="Figurer/huvudvark_skola_Uppsala.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Uppsala.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Uppsala.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-7-tab">
-<img src="Figurer/huvudvark_skola_Älvkarleby.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Älvkarleby.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-11-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-11-8-tab">
-<img src="Figurer/huvudvark_skola_Östhammar.svg" alt="Figuren visar andelen som uppgett att de har öronsus (tinnitus), visas för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/huvudvark_skola_Östhammar.svg" download="">Som SVG</a><a href="Figurer/huvudvark_skola_Östhammar.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-</div>
-</div>
-<p>Andelen flickor som angett ‘Stämmer delvis’ eller ‘Stämmer helt’ på om de har huvudvärk, ont i magen eller illamående är högre jämfört med pojkar i samtliga kommuner i länet.</p>
+<p>Andelen som svarat att de har astma är relativt lika i länets kommuner.</p>
+<p>Det finns inga statistiskt säkerställda skillnader mellan könen, men en något högre andel av kvinnorna som besvarade enkäten uppgav att de hade astma.</p>
 </section>
 </section>
 <section id="övervikt-och-obesitas" class="level1">
 <h1>Övervikt och obesitas</h1>
-<p>Redovisningen bygger på frågorna “Hur lång är du?” och “Hur mycket väger du?”, utifrån vilka BMI har beräknats.</p>
+<p>Redovisningen av övervikt och obesitas bygger på frågorna “Hur lång är du?” och “Hur mycket väger du?”, utifrån vilka BMI har beräknats.</p>
 <p>BMI är ett vanligt mått för att uppskatta kroppsvikt i relation till längd, men har flera begränsningar. Måttet kan enligt <span class="citation" data-cites="1177_bmi_vikt">1177 Vårdguiden (<a href="#ref-1177_bmi_vikt" role="doc-biblioref">2026</a>)</span> ge en missvisande bild för personer med stor muskelmassa, eftersom det inte skiljer mellan fett och muskler. BMI visar heller inte hur kroppsfettet är fördelat, trots att bukfett i synnerhet är kopplat till ökad hälsorisk. Det vill säga att en person som enligt BMI är i klassen övervikt kan till exempel ha en mer hälsosam fettfördelning än en person i klassen normalvikt.</p>
-<p>Data hämtas från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025b</a>)</span>.</p>
+<p>Data hämtas från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-12-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-1" role="tab" aria-controls="tabset-12-1" aria-selected="true" href="">Riket</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-2" role="tab" aria-controls="tabset-12-2" aria-selected="false" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-3" role="tab" aria-controls="tabset-12-3" aria-selected="false" href="">Södermanlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-4" role="tab" aria-controls="tabset-12-4" aria-selected="false" href="">Östergötlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-5" role="tab" aria-controls="tabset-12-5" aria-selected="false" href="">Örebro län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-12-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-12-6" role="tab" aria-controls="tabset-12-6" aria-selected="false" href="">Västmanlands län</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-4-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-1" role="tab" aria-controls="tabset-4-1" aria-selected="true" href="">Riket</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-2" role="tab" aria-controls="tabset-4-2" aria-selected="false" href="">Södermanlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-3" role="tab" aria-controls="tabset-4-3" aria-selected="false" href="">Östergötlands län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-4" role="tab" aria-controls="tabset-4-4" aria-selected="false" href="">Örebro län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-4-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-4-5" role="tab" aria-controls="tabset-4-5" aria-selected="false" href="">Västmanlands län</a></li></ul>
 <div class="tab-content">
-<div id="tabset-12-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-12-1-tab">
+<div id="tabset-4-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-4-1-tab">
 <img src="Figurer/obesitas_Riket.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Riket , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
@@ -1606,37 +872,8 @@ Figur&nbsp;7
 </div>
 </div>
 </div>
-<img src="Figurer/undervikt_Riket.svg" alt="Figuren visar andelarna för underviktiga i Riket , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Riket.svg" download="">Som SVG</a><a href="Figurer/undervikt_Riket.png" download="">Som PNG</a>
 </div>
-</div>
-</div>
-</div>
-<div id="tabset-12-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-2-tab">
-<img src="Figurer/obesitas_Uppsala län.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Uppsala län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/obesitas_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/obesitas_Uppsala län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-<img src="Figurer/undervikt_Uppsala län.svg" alt="Figuren visar andelarna för underviktiga i Uppsala län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/undervikt_Uppsala län.png" download="">Som PNG</a>
-</div>
-</div>
-</div>
-</div>
-<div id="tabset-12-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-3-tab">
+<div id="tabset-4-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-2-tab">
 <img src="Figurer/obesitas_Södermanlands län.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Södermanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
@@ -1646,17 +883,8 @@ Figur&nbsp;7
 </div>
 </div>
 </div>
-<img src="Figurer/undervikt_Södermanlands län.svg" alt="Figuren visar andelarna för underviktiga i Södermanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Södermanlands län.svg" download="">Som SVG</a><a href="Figurer/undervikt_Södermanlands län.png" download="">Som PNG</a>
 </div>
-</div>
-</div>
-</div>
-<div id="tabset-12-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-4-tab">
+<div id="tabset-4-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-3-tab">
 <img src="Figurer/obesitas_Östergötlands län.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Östergötlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
@@ -1666,17 +894,8 @@ Figur&nbsp;7
 </div>
 </div>
 </div>
-<img src="Figurer/undervikt_Östergötlands län.svg" alt="Figuren visar andelarna för underviktiga i Östergötlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Östergötlands län.svg" download="">Som SVG</a><a href="Figurer/undervikt_Östergötlands län.png" download="">Som PNG</a>
 </div>
-</div>
-</div>
-</div>
-<div id="tabset-12-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-5-tab">
+<div id="tabset-4-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-4-tab">
 <img src="Figurer/obesitas_Örebro län.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Örebro län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
@@ -1686,17 +905,8 @@ Figur&nbsp;7
 </div>
 </div>
 </div>
-<img src="Figurer/undervikt_Örebro län.svg" alt="Figuren visar andelarna för underviktiga i Örebro län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Örebro län.svg" download="">Som SVG</a><a href="Figurer/undervikt_Örebro län.png" download="">Som PNG</a>
 </div>
-</div>
-</div>
-</div>
-<div id="tabset-12-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-12-6-tab">
+<div id="tabset-4-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-4-5-tab">
 <img src="Figurer/obesitas_Västmanlands län.svg" alt="Figuren visar fördelningen av viktklassgrupperna i  Västmanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
@@ -1706,117 +916,290 @@ Figur&nbsp;7
 </div>
 </div>
 </div>
-<img src="Figurer/undervikt_Västmanlands län.svg" alt="Figuren visar andelarna för underviktiga i Västmanlands län , visas över tid och uppdelat per kön" style="width:100%; max-width:800px; height:100%;">
-<div style="margin-top:0.5rem;">
-<div class="download-dropdown">
-<span class="download-btn">Ladda ner</span>
-<div class="download-menu">
-<a href="Figurer/undervikt_Västmanlands län.svg" download="">Som SVG</a><a href="Figurer/undervikt_Västmanlands län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
-</div>
-</div>
-</div>
-<p>Fördelningen av viktgrupper i Uppsala län liknar rikets. Normalvikt är den vanligaste kategorin för både kvinnor och män, omkring 50–55 procent av kvinnorna och 45–50 procent av männen tillhör den gruppen.</p>
-<p>Den tydligaste skillnaden mellan könen är att en större andel män befinner sig i gruppen övervikt. I Uppsala län har andelen underviktiga män ökat över tid, vilket gjort att skillnaden mellan könen inte längre är statistiskt säkerställd. På riksnivå kvarstår dock en statistiskt säkerställd högre andel underviktiga kvinnor jämfört med män.</p>
-<section id="kommunnivå-6" class="level2">
-<h2 class="anchored" data-anchor-id="kommunnivå-6">Kommunnivå</h2>
-<p>Här är data hämtat från liv och hälsa vuxen och är sammanställt av Region Uppsala.</p>
+<p>Fördelningen av viktgrupper i Uppsala län liknar rikets. Normalvikt är den vanligaste kategorin för både kvinnor och män, där omkring 50–55 procent av kvinnorna och 45–50 procent av männen tillhör den gruppen.</p>
+<p>Den övergripande trenden är att andelen normalviktiga minskat, medan andelen med övervikt/obesitas ökat.</p>
+<p>Den tydligaste skillnaden mellan könen är att en större andel män befinner sig i gruppen överviktiga. Det är vanligare att kvinnor är underviktiga än män.</p>
+<section id="kommunnivå-2" class="level2">
+<h2 class="anchored" data-anchor-id="kommunnivå-2">Kommunnivå</h2>
+<p>Nedan presenteras fördelningen av viktklassgrupper uppdelat på kommun och kön.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span>.</p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-13-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-1" role="tab" aria-controls="tabset-13-1" aria-selected="true" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-2" role="tab" aria-controls="tabset-13-2" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-3" role="tab" aria-controls="tabset-13-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-4" role="tab" aria-controls="tabset-13-4" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-5" role="tab" aria-controls="tabset-13-5" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-6" role="tab" aria-controls="tabset-13-6" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-7" role="tab" aria-controls="tabset-13-7" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-13-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-13-8" role="tab" aria-controls="tabset-13-8" aria-selected="false" href="">Östhammar</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-5-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-1" role="tab" aria-controls="tabset-5-1" aria-selected="true" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-2" role="tab" aria-controls="tabset-5-2" aria-selected="false" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-3" role="tab" aria-controls="tabset-5-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-4" role="tab" aria-controls="tabset-5-4" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-5" role="tab" aria-controls="tabset-5-5" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-6" role="tab" aria-controls="tabset-5-6" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-7" role="tab" aria-controls="tabset-5-7" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-8" role="tab" aria-controls="tabset-5-8" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-5-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-5-9" role="tab" aria-controls="tabset-5-9" aria-selected="false" href="">Östhammar</a></li></ul>
 <div class="tab-content">
-<div id="tabset-13-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-13-1-tab">
-<img src="Figurer/bmi_Enköping.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-5-1-tab">
+<img src="Figurer/bmi_kom_line_Uppsala län.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Enköping.svg" download="">Som SVG</a><a href="Figurer/bmi_Enköping.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Uppsala län.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-2-tab">
-<img src="Figurer/bmi_Heby.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-2-tab">
+<img src="Figurer/bmi_kom_line_Enköping.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Heby.svg" download="">Som SVG</a><a href="Figurer/bmi_Heby.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Enköping.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Enköping.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-3-tab">
-<img src="Figurer/bmi_Håbo.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-3-tab">
+<img src="Figurer/bmi_kom_line_Håbo.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Håbo.svg" download="">Som SVG</a><a href="Figurer/bmi_Håbo.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Håbo.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Håbo.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-4-tab">
-<img src="Figurer/bmi_Knivsta.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-4-tab">
+<img src="Figurer/bmi_kom_line_Heby.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Knivsta.svg" download="">Som SVG</a><a href="Figurer/bmi_Knivsta.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Heby.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Heby.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-5-tab">
-<img src="Figurer/bmi_Tierp.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-5-tab">
+<img src="Figurer/bmi_kom_line_Knivsta.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Tierp.svg" download="">Som SVG</a><a href="Figurer/bmi_Tierp.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Knivsta.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Knivsta.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-6-tab">
-<img src="Figurer/bmi_Uppsala.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-6-tab">
+<img src="Figurer/bmi_kom_line_Tierp.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Uppsala.svg" download="">Som SVG</a><a href="Figurer/bmi_Uppsala.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Tierp.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Tierp.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-7-tab">
-<img src="Figurer/bmi_Älvkarleby.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-7-tab">
+<img src="Figurer/bmi_kom_line_Uppsala.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/bmi_Älvkarleby.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Uppsala.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Uppsala.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
-<div id="tabset-13-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-13-8-tab">
-<img src="Figurer/bmi_Östhammar.svg" alt="Figuren visar fördelningen av viktklassgrupperna, för länets kommuner, uppdelat per kön för år 2022" style="width:100%; max-width:800px; height:100%;">
+<div id="tabset-5-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-8-tab">
+<img src="Figurer/bmi_kom_line_Älvkarleby.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
 <div style="margin-top:0.5rem;">
 <div class="download-dropdown">
 <span class="download-btn">Ladda ner</span>
 <div class="download-menu">
-<a href="Figurer/bmi_Östhammar.svg" download="">Som SVG</a><a href="Figurer/bmi_Östhammar.png" download="">Som PNG</a>
+<a href="Figurer/bmi_kom_line_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-5-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-5-9-tab">
+<img src="Figurer/bmi_kom_line_Östhammar.svg" alt="Figuren visar fördelningen av viktklassgrupperna över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/bmi_kom_line_Östhammar.svg" download="">Som SVG</a><a href="Figurer/bmi_kom_line_Östhammar.png" download="">Som PNG</a>
 </div>
 </div>
 </div>
 </div>
 </div>
 </div>
-<p>Andelen överviktiga män ser ut att vara högre än överviktiga kvinnor i många av länet kommuner, men det är endast signifikant högre i Håbo och Uppsala kommun. I samma kommuner så är andelen kvinnor i normalvikt högre än männens.</p>
+<p>Det finns tydliga skillnader mellan kommunerna i fördelningen av viktstatusgrupper, där det i flera kommuner är vanligare att män är överviktiga än normalviktiga, även om skillnaden inte alltid är statistiskt säkerställd.</p>
+</section>
+</section>
+<section id="tandhälsa" class="level1">
+<h1>Tandhälsa</h1>
+<p><a href="#fig-tandhalsa" class="quarto-xref">Figur&nbsp;5</a> visar andelen som uppger bra respektive dålig tandhälsa, baserat på frågan “Hur tycker du att din tandhälsa är?”.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-tandhalsa" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelarna bland dem som uppgett en bra eller dålig tandhälsa i Uppsala län över tid, uppdelat på kön.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tandhalsa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figurer/tandhalsa.svg" id="fig-tandhalsa" class="img-fluid figure-img" alt="Figuren visar andelarna bland dem som uppgett en bra eller dålig tandhälsa i Uppsala län över tid, uppdelat på kön.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tandhalsa-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;5
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div style="margin-top:0.5rem;">
+  <div class="download-dropdown">
+    <span class="download-btn">Ladda ner</span>
+    <div class="download-menu">
+      <a href="Figurer/tandhalsa.svg" download="">Som SVG</a>
+      <a href="Figurer/tandhalsa.png" download="">Som PNG</a>
+    </div>
+  </div>
+</div>
+<p>Andelen som uppger god tandhälsa är något högre bland kvinnor än bland män, både i Uppsala län och i riket, men skillnaden är liten och inte statistiskt säkerställd. Nivåerna har varit stabila över tid och någon tydlig förändring syns inte mellan mätperiodens början och slut.</p>
+<section id="kommunnivå-3" class="level3">
+<h3 class="anchored" data-anchor-id="kommunnivå-3">Kommunnivå</h3>
+<p>Nedan presenteras fördelningen av svar på hur man upplever sin tandhälsa, uppdelat på kommun och kön.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span>.</p>
+<div class="tabset-margin-container"></div><div class="panel-tabset">
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-6-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-1" role="tab" aria-controls="tabset-6-1" aria-selected="true" href="">Uppsala län</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-2" role="tab" aria-controls="tabset-6-2" aria-selected="false" href="">Enköping</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-3" role="tab" aria-controls="tabset-6-3" aria-selected="false" href="">Håbo</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-4-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-4" role="tab" aria-controls="tabset-6-4" aria-selected="false" href="">Heby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-5-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-5" role="tab" aria-controls="tabset-6-5" aria-selected="false" href="">Knivsta</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-6-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-6" role="tab" aria-controls="tabset-6-6" aria-selected="false" href="">Tierp</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-7-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-7" role="tab" aria-controls="tabset-6-7" aria-selected="false" href="">Uppsala</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-8-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-8" role="tab" aria-controls="tabset-6-8" aria-selected="false" href="">Älvkarleby</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-6-9-tab" data-bs-toggle="tab" data-bs-target="#tabset-6-9" role="tab" aria-controls="tabset-6-9" aria-selected="false" href="">Östhammar</a></li></ul>
+<div class="tab-content">
+<div id="tabset-6-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-6-1-tab">
+<img src="Figurer/tandhalsa_kom_line_Uppsala län.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Uppsala län.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Uppsala län.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-2" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-2-tab">
+<img src="Figurer/tandhalsa_kom_line_Enköping.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Enköping.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Enköping.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-3" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-3-tab">
+<img src="Figurer/tandhalsa_kom_line_Håbo.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Håbo.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Håbo.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-4" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-4-tab">
+<img src="Figurer/tandhalsa_kom_line_Heby.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Heby.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Heby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-5" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-5-tab">
+<img src="Figurer/tandhalsa_kom_line_Knivsta.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Knivsta.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Knivsta.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-6" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-6-tab">
+<img src="Figurer/tandhalsa_kom_line_Tierp.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Tierp.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Tierp.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-7" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-7-tab">
+<img src="Figurer/tandhalsa_kom_line_Uppsala.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Uppsala.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Uppsala.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-8" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-8-tab">
+<img src="Figurer/tandhalsa_kom_line_Älvkarleby.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Älvkarleby.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Älvkarleby.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+<div id="tabset-6-9" class="tab-pane" role="tabpanel" aria-labelledby="tabset-6-9-tab">
+<img src="Figurer/tandhalsa_kom_line_Östhammar.svg" alt="Figuren visar andelar för de som uppgett en bra tandhälsa över tid, uppdelat på kommun och kön." style="width:100%; max-width:800px; height:100%;">
+<div style="margin-top:0.5rem;">
+<div class="download-dropdown">
+<span class="download-btn">Ladda ner</span>
+<div class="download-menu">
+<a href="Figurer/tandhalsa_kom_line_Östhammar.svg" download="">Som SVG</a><a href="Figurer/tandhalsa_kom_line_Östhammar.png" download="">Som PNG</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<p>För samtliga kommuner uppger en tydlig majoritet att de har god tandhälsa, och trenden har varit relativt stabil över tid.</p>
+<p>Skillnaderna mellan könen är små, men i samtliga kommuner skattar kvinnor sin tandhälsa som god i något högre utsträckning än män.</p>
+</section>
+<section id="avstått-trots-behov" class="level2">
+<h2 class="anchored" data-anchor-id="avstått-trots-behov">Avstått trots behov</h2>
+<p><a href="#fig-tandhalsa_behov" class="quarto-xref">Figur&nbsp;6</a> visar andelen som avstått från tandläkarvård trots att de upplevde ett behov, utifrån frågorna “Har du under de senaste tre månaderna ansett dig vara i behov av tandläkarvård men ändå avstått från att söka vård?” och “Vilken var orsaken eller orsakerna till att du inte sökte tandläkarvård?”.</p>
+<p>Uppgifterna är hämtade från <span class="citation" data-cites="folkhalsomyndigheten">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten" role="doc-biblioref">2025</a>)</span>.</p>
+<div class="cell">
+<div class="cell-output-display">
+<div id="fig-tandhalsa_behov" class="quarto-float quarto-figure quarto-figure-center anchored" alt="Figuren visar andelarna bland dem som angett att de avstått från tandläkarvård trots behov i Uppsala län över tid, uppdelat på kön.">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-tandhalsa_behov-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="Figurer/tandhalsa_behov.svg" id="fig-tandhalsa_behov" class="img-fluid figure-img" alt="Figuren visar andelarna bland dem som angett att de avstått från tandläkarvård trots behov i Uppsala län över tid, uppdelat på kön.">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig quarto-uncaptioned" id="fig-tandhalsa_behov-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figur&nbsp;6
+</figcaption>
+</figure>
+</div>
+</div>
+</div>
+<div style="margin-top:0.5rem;">
+  <div class="download-dropdown">
+    <span class="download-btn">Ladda ner</span>
+    <div class="download-menu">
+      <a href="Figurer/tandhalsa_behov.svg" download="">Som SVG</a>
+      <a href="Figurer/tandhalsa_behov.png" download="">Som PNG</a>
+    </div>
+  </div>
+</div>
+<p>Bland de som avstått från tandläkarvård trots upplevt behov uppger ungefär hälften att ekonomi är den främsta orsaken. Mönstret har varit stabilt över tid. Skillnaderna mellan män och kvinnor är små och inte statistiskt säkerställda.</p>
 
 
 </section>
@@ -1826,39 +1209,36 @@ Figur&nbsp;7
 
 </section>
 
-<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Källor</h2><div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list">
+<div id="quarto-appendix" class="default"><section class="quarto-appendix-contents" role="doc-bibliography" id="quarto-bibliography"><h2 class="anchored quarto-appendix-heading">Källor</h2><div id="refs" class="references csl-bib-body hanging-indent" role="list">
 <div id="ref-1177_bmi_vikt" class="csl-entry" role="listitem">
-1177 Vårdguiden. 2026. <span>”Så bedömer du din vikt”</span>. <a href="https://www.1177.se/Uppsala-lan/liv--halsa/sunda-vanor/sa-bedomer-du-din-vikt/">https://www.1177.se/Uppsala-lan/liv--halsa/sunda-vanor/sa-bedomer-du-din-vikt/</a>.
-</div>
-<div id="ref-folkhalsomyndigheten_definitioner" class="csl-entry" role="listitem">
-Folkhälsomyndigheten. 2025a. <span>”Definitioner, kommentarer och källor”</span>. Folkhälsomyndigheten. <a href="https://www.folkhalsomyndigheten.se/globalassets/statistik-uppfoljning/folkhalsans-utveckling/definitioner-kommentarer-kallor.pdf">https://www.folkhalsomyndigheten.se/globalassets/statistik-uppfoljning/folkhalsans-utveckling/definitioner-kommentarer-kallor.pdf</a>.
+1177 Vårdguiden. 2026. <em>Så bedömer du din vikt</em>. <a href="https://www.1177.se/Uppsala-lan/liv--halsa/sunda-vanor/sa-bedomer-du-din-vikt/">https://www.1177.se/Uppsala-lan/liv--halsa/sunda-vanor/sa-bedomer-du-din-vikt/</a>.
 </div>
 <div id="ref-folkhalsomyndigheten" class="csl-entry" role="listitem">
-———. 2025b. <span>”Folkhälsomyndigheten – nationell kunskapsmyndighet för folkhälsa”</span>. <a href="https://www.folkhalsomyndigheten.se/">https://www.folkhalsomyndigheten.se/</a>.
+Folkhälsomyndigheten. 2025. <em>Folkhälsomyndigheten – nationell kunskapsmyndighet för folkhälsa</em>. <a href="https://www.folkhalsomyndigheten.se/">https://www.folkhalsomyndigheten.se/</a>.
 </div>
 <div id="ref-folkhalsomyndigheten_nfhe" class="csl-entry" role="listitem">
-———. u.å. <span>”Nationella folkhälsoenkäten – om våra datainsamlingar”</span>. <a href="https://www.folkhalsomyndigheten.se/statistik-och-data/om-vara-data/om-vara-datainsamlingar/nationella-folkhalsoenkaten/" class="uri">https://www.folkhalsomyndigheten.se/statistik-och-data/om-vara-data/om-vara-datainsamlingar/nationella-folkhalsoenkaten/</a>.
+Folkhälsomyndigheten. u.å. <em>Nationella folkhälsoenkäten – om våra datainsamlingar</em>. <a href="https://www.folkhalsomyndigheten.se/statistik-och-data/om-vara-data/om-vara-datainsamlingar/nationella-folkhalsoenkaten/" class="uri">Https://www.folkhalsomyndigheten.se/statistik-och-data/om-vara-data/om-vara-datainsamlingar/nationella-folkhalsoenkaten/</a>.
+</div>
+<div id="ref-region_uppsala_halsa_pa_lika_villkor" class="csl-entry" role="listitem">
+Hälsa på lika villkor. u.å. <em>Hälsa på lika villkor – folkhälsoundersökning</em>. <a href="https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-vuxen--folkhalsoundersokning/">https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-vuxen--folkhalsoundersokning/</a>.
 </div>
 <div id="ref-region_uppsala_liv_halsa_ung" class="csl-entry" role="listitem">
-Liv och hälsa ung-Region Uppsala. n.d. <span>”Liv och hälsa ung”</span>. <a href="https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/">https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/</a>.
-</div>
-<div id="ref-region_uppsala_liv_halsa_vuxen" class="csl-entry" role="listitem">
-Liv och hälsa vuxen-Region Uppsala. n.d. <span>”Liv och hälsa vuxen – folkhälsoundersökning”</span>. <a href="https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-vuxen--folkhalsoundersokning/">https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-vuxen--folkhalsoundersokning/</a>.
+Liv och hälsa ung. u.å. <em>Liv och hälsa ung</em>. <a href="https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/">https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/</a>.
 </div>
 <div id="ref-lumley2004" class="csl-entry" role="listitem">
 Lumley, Thomas. 2004. <span>”Analysis of Complex Survey Samples”</span>. <em>Journal of Statistical Software</em> 9 (8): 1–19. <a href="https://doi.org/10.18637/jss.v009.i08">https://doi.org/10.18637/jss.v009.i08</a>.
 </div>
 <div id="ref-lumley2010" class="csl-entry" role="listitem">
-———. 2010. <em>Complex Surveys: A Guide to Analysis Using R</em>. Hoboken, NJ: Wiley.
+Lumley, Thomas. 2010. <em>Complex Surveys: A Guide to Analysis Using R</em>. Wiley.
 </div>
 <div id="ref-surveyPackage" class="csl-entry" role="listitem">
-———. 2024. <em>survey: Analysis of Complex Survey Samples</em>. <a href="https://cran.r-project.org/package=survey">https://cran.r-project.org/package=survey</a>.
+Lumley, Thomas. 2024. <em>survey: Analysis of Complex Survey Samples</em>. <a href="https://cran.r-project.org/package=survey">https://cran.r-project.org/package=survey</a>.
 </div>
 <div id="ref-socialstyrelsen_en" class="csl-entry" role="listitem">
-National Board of Health and Welfare (Socialstyrelsen). 2026. <span>”Socialstyrelsen”</span>. <a href="https://www.socialstyrelsen.se/en/">https://www.socialstyrelsen.se/en/</a>.
+National Board of Health and Welfare (Socialstyrelsen). 2026. <em>Socialstyrelsen</em>. <a href="https://www.socialstyrelsen.se/en/">https://www.socialstyrelsen.se/en/</a>.
 </div>
 <div id="ref-ndr_registercentrum" class="csl-entry" role="listitem">
-Nationella Diabetesregistret. 2026. <span>”Nationella Diabetesregistret”</span>. <a href="https://ndr.registercentrum.se/">https://ndr.registercentrum.se/</a>.
+Nationella Diabetesregistret. 2026. <em>Nationella Diabetesregistret</em>. <a href="https://ndr.registercentrum.se/">https://ndr.registercentrum.se/</a>.
 </div>
 </div></section></div></main> <!-- /main -->
 

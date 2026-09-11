@@ -37,10 +37,13 @@ body{
   text-decoration:underline;
 }
 #quarto-header .navbar-toggler{
-  border-color:rgba(255,255,255,.6);
+  border:none;
 }
 #quarto-header .navbar-toggler-icon{
-  filter:invert(1) grayscale(1); /* gör hamburgaren vit */
+  filter:invert(1);
+}
+.navbar-toggler-icon {
+  color: white !important;
 }
 
 /* Låt själva Quarto-grid fylla bredden (ingen smal container) */

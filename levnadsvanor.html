@@ -264,7 +264,7 @@ window.Quarto = {
 <section id="om-statistiken" class="level2">
 <h2 class="anchored" data-anchor-id="om-statistiken">Om statistiken</h2>
 <p>I Uppsala län följs den fysiska hälsan bland annat genom den nationella folkhälsoenkäten, där invånarna bland annat tillfrågas om sin tandhälsa, fysiska aktivitet och besvär av sjukdomar. Enkäten genomförs av <span class="citation" data-cites="folkhalsomyndigheten_nfhe">Folkhälsomyndigheten (<a href="#ref-folkhalsomyndigheten_nfhe" role="doc-biblioref">u.å.</a>)</span> och är en undersökning om den svenska befolkningens hälsa, med syfte att se hur befolkningen mår över tid.</p>
-<p>För data från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span> så har Region Uppsala beräknat andelarna själva efter kalibreringsvikter. Det är denna data som används när enkätresultat från Hälsa på lika villkor visas på kommunnivå, då enkäten har stratifierats ut till flera personer i länets kommuner.</p>
+<p>För data från <span class="citation" data-cites="region_uppsala_halsa_pa_lika_villkor">Hälsa på lika villkor (<a href="#ref-region_uppsala_halsa_pa_lika_villkor" role="doc-biblioref">u.å.</a>)</span> så har Region Uppsala beräknat andelarna själva efter kalibreringsvikter. Det är denna data som används när enkätresultat från Hälsa på lika villkor visas på kommunnivå.</p>
 <p>Gällande data från <span class="citation" data-cites="region_uppsala_liv_halsa_ung">Liv och hälsa ung (<a href="#ref-region_uppsala_liv_halsa_ung" role="doc-biblioref">u.å.</a>)</span> så har kalibreringsvikter inte tillämpats, eftersom det faktiska bortfallet inte kan beräknas exakt utan måste uppskattas. Det innebär att eventuella snedfördelningar i vilka som svarat på enkäten inte har korrigerats, vilket kan göra att resultaten inte fullt ut speglar den faktiska befolkningen. Resultaten bör därför tolkas med försiktighet, särskilt vid jämförelser mellan grupper och kommuner.</p>
 <p>De konfidensintervall som redovisas har konfidensgraden 95 %. Ett sådant intervall beräknas med en metod som vid upprepade urval täcker det sanna värdet i 95 % av fallen. Överlappande konfidensintervall innebär inte automatiskt att skillnaden mellan två grupper saknar statistisk signifikans; detta behöver bedömas med ett särskilt test. <strong>Det innebär inte heller att det med säkerhet saknas en skillnad.</strong> Det kan finnas en reell skillnad, men osäkerheten i materialet kan vara för stor för att den ska kunna styrkas statistiskt.</p>
 <div class="callout callout-style-default callout-note callout-titled">
@@ -279,49 +279,51 @@ window.Quarto = {
 </div>
 <div id="callout-1" class="callout-1-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Beräkningarna görs med funktioner från R-paketet <span class="citation" data-cites="surveyPackage">Lumley (<a href="#ref-surveyPackage" role="doc-biblioref">2024</a>)</span>, vilket implementerar design-baserad inferens för urvalsundersökningar <span class="citation" data-cites="lumley2004">Lumley (<a href="#ref-lumley2004" role="doc-biblioref">2004</a>)</span> <span class="citation" data-cites="lumley2010">Lumley (<a href="#ref-lumley2010" role="doc-biblioref">2010</a>)</span>.</p>
-<p>I analysen används ett survey-designobjekt av typen</p>
-<p><span class="math display">\[\text{svydesign}(ids = \sim 1,\; weights = \sim w_i,\; data = df)\]</span></p>
-<p>Att sätta <code>ids = ~1</code> innebär att ingen klustring specificeras och att varje observation behandlas som en egen primär urvalsenhet (PSU). Variansskattningarna reduceras därmed till motsvarande designbaserade estimatorer utan klusterstruktur.</p>
-<section id="skattning-av-andelar" class="level2">
-<h2 class="anchored" data-anchor-id="skattning-av-andelar">Skattning av andelar</h2>
-<p>För varje nivå (l) av variabeln (Y) skapas en indikatorvariabel</p>
+<p>Andelarna beräknas med de kalibreringsvikter (<code>w_i</code>) som hör till respektive svarande. Vikterna används för att resultaten bättre ska spegla målpopulationen och delvis kompensera för bortfall.</p>
+<section id="skattning-av-andelar" class="level4">
+<h4 class="anchored" data-anchor-id="skattning-av-andelar">Skattning av andelar</h4>
+<p>För varje svarskategori <code>l</code> skapas en indikatorvariabel:</p>
 <p><span class="math display">\[I_i^{(l)} =
 \begin{cases}
-1 &amp; \text{om } Y_i = l \\
-0 &amp; \text{annars}
+1, &amp; \text{om } Y_i = l \\
+0, &amp; \text{annars}
 \end{cases}\]</span></p>
-<p>Den designviktade andelen skattas som</p>
+<p>Den viktade andelen beräknas som:</p>
 <p><span class="math display">\[\hat{p}_l =
 \frac{\sum_{i=1}^{n} w_i I_i^{(l)}}
 {\sum_{i=1}^{n} w_i}\]</span></p>
-<p>där (w_i) är urvalsvikten för observation (i). Vikterna representerar kalibreringsjusteringar.</p>
-<p>När beräkningen görs inom grupper (g) (definierade av kommun och kön i denna rapport) beräknas andelen separat inom varje grupp:</p>
+<p>där <code>w_i</code> är kalibreringsvikten för svarande <code>i</code>.</p>
+<p>När andelen beräknas för en viss grupp, exempelvis en kommun och ett kön, används endast de svarande som tillhör gruppen:</p>
 <p><span class="math display">\[\hat{p}_{lg} =
 \frac{\sum_{i \in g} w_i I_i^{(l)}}
 {\sum_{i \in g} w_i}\]</span></p>
+<p>Andelarna beräknas separat för varje svarskategori och grupp.</p>
 </section>
-<section id="variansskattning" class="level2">
-<h2 class="anchored" data-anchor-id="variansskattning">Variansskattning</h2>
-<p>Variansen för estimatorn beräknas med design-baserad linjärisering (Taylor-approximation) enligt metoder implementerade i <code>survey</code>-paketet.</p>
-<p>När <code>ids = ~1</code> används reduceras variansestimatorn i praktiken till en Horvitz–Thompson-baserad varians för ett viktat urval utan klustring, vilket är fallet i denna rapport.</p>
-</section>
-<section id="konfidensintervall" class="level2">
-<h2 class="anchored" data-anchor-id="konfidensintervall">Konfidensintervall</h2>
-<p>Konfidensintervallen beräknas med funktionen <code>svyciprop()</code> och metoden <code>"logit"</code>.</p>
-<p>Denna metod skattar först logit-transformerade parametrar</p>
-<p><span class="math display">\[\theta = \log\left(\frac{\hat{p}}{1-\hat{p}}\right)\]</span></p>
-<p>och beräknar ett Wald-intervall på logit-skalan</p>
-<p><span class="math display">\[\theta \pm z_{0.975} \cdot SE(\theta)\]</span></p>
-<p>Därefter transformeras intervallet tillbaka till proportionsskalan med den logistiska funktionen</p>
-<p><span class="math display">\[p = \frac{1}{1 + e^{-\theta}}\]</span></p>
-<p>Det slutliga intervallet blir därför</p>
-<p><span class="math display">\[\left(
-\frac{1}{1 + e^{-(\theta - z_{0.975}SE(\theta))}},
-\;
-\frac{1}{1 + e^{-(\theta + z_{0.975}SE(\theta))}}
+<section id="konfidensintervall" class="level4">
+<h4 class="anchored" data-anchor-id="konfidensintervall">Konfidensintervall</h4>
+<p>För figurer med konfidensintervall används Folkhälsomyndighetens metod. Den statistiska osäkerheten beräknas utifrån den viktade andelen och det oviktade antalet giltiga svarande.</p>
+<p>Först beräknas standardfelet:</p>
+<p><span class="math display">\[SE(\hat{p}) =
+\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}\]</span></p>
+<p>där <code>n</code> är antalet svarande med ett giltigt svar på den aktuella frågan.</p>
+<p>Det 95-procentiga konfidensintervallet beräknas sedan som:</p>
+<p><span class="math display">\[\hat{p} \pm 1{,}96 \cdot SE(\hat{p})\]</span></p>
+<p>Det ger intervallets nedre och övre gräns:</p>
+<p><span class="math display">\[CI_l =
+\max\left(
+0,\,
+\hat{p} -
+1{,}96
+\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
 \right)\]</span></p>
-<p>Logit-metoden används eftersom den ger mer stabila konfidensintervall när andelar ligger nära (0) eller (1).</p>
+<p><span class="math display">\[CI_u =
+\min\left(
+1,\,
+\hat{p} +
+1{,}96
+\sqrt{\frac{\hat{p}(1-\hat{p})}{n}}
+\right)\]</span></p>
+<p>Konfidensintervallen beskriver den osäkerhet som beror på att resultaten bygger på ett urval. De tar inte hänsyn till all osäkerhet, exempelvis eventuella kvarstående skillnader mellan svarande och icke-svarande.</p>
 </section>
 </div>
 </div>
@@ -2717,15 +2719,6 @@ Hälsa på lika villkor. u.å. <em>Hälsa på lika villkor – folkhälsounders�
 </div>
 <div id="ref-region_uppsala_liv_halsa_ung" class="csl-entry" role="listitem">
 Liv och hälsa ung. u.å. <em>Liv och hälsa ung</em>. <a href="https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/">https://regionuppsala.se/utveckling/utvecklingsomraden/folkhalsa-och-social-hallbarhet/liv-och-halsa-ung/</a>.
-</div>
-<div id="ref-lumley2004" class="csl-entry" role="listitem">
-Lumley, Thomas. 2004. <span>”Analysis of Complex Survey Samples”</span>. <em>Journal of Statistical Software</em> 9 (8): 1–19. <a href="https://doi.org/10.18637/jss.v009.i08">https://doi.org/10.18637/jss.v009.i08</a>.
-</div>
-<div id="ref-lumley2010" class="csl-entry" role="listitem">
-Lumley, Thomas. 2010. <em>Complex Surveys: A Guide to Analysis Using R</em>. Wiley.
-</div>
-<div id="ref-surveyPackage" class="csl-entry" role="listitem">
-Lumley, Thomas. 2024. <em>survey: Analysis of Complex Survey Samples</em>. <a href="https://cran.r-project.org/package=survey">https://cran.r-project.org/package=survey</a>.
 </div>
 <div id="ref-socialstyrelsen_tobak_nikotin" class="csl-entry" role="listitem">
 Socialstyrelsen. 2026. <em>Tobak och nikotin</em>. Socialstyrelsen. <a href="https://www.socialstyrelsen.se/kunskapsstod-och-regler/omraden/skadligt-bruk-och-beroende/tobak-och-nikotin/">https://www.socialstyrelsen.se/kunskapsstod-och-regler/omraden/skadligt-bruk-och-beroende/tobak-och-nikotin/</a>.
